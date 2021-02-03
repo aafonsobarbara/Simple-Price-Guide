@@ -1,0 +1,145 @@
+/*
+ Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+*/
+body {
+  font-family: "Karla", sans-serif;
+  background: hsl(204, 43%, 93%);
+  font-size: 16px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box-grande {
+  box-shadow: 3px 2px 10px grey;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  width: 650px;
+}
+
+.box-1 {
+  background: white;
+  padding: 40px;
+  border-radius: 5px 5px 0 0;
+  flex-grow: 2;
+}
+
+.box-1 h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 25px;
+}
+
+.box-1 h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.box-1 p {
+  color: hsl(218, 22%, 67%);
+  max-width: 550px;
+  line-height: 1.8;
+}
+
+.box-2 {
+  background: #2bb3b1;
+  padding: 40px;
+  border-radius: 0 0 0 5px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.box-2 h1 {
+  color: hsl(204, 43%, 93%);
+  font-size: 20px;
+}
+
+.box-2 span {
+  font-size: 40px;
+  font-weight: bold;
+  color: hsl(204, 43%, 93%);
+}
+
+.box-2 p:first-of-type {
+  color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  opacity: 70%;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 103px;
+  padding-left: 10px;
+}
+
+.box-2 .p-text {
+  color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  opacity: 100%;
+  display: block;
+}
+
+.box-2 .btn {
+  background: hsl(71, 73%, 54%);
+  padding: 15px 0px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: hsl(204, 43%, 93%);
+  border-radius: 5px;
+  margin-top: 25px;
+  box-shadow: 3px 2px 10px grey;
+  cursor: pointer;
+  max-width: 240px;
+}
+
+.box-2 .btn:hover {
+  background: hsl(218, 22%, 67%);
+  transition: 0.3s;
+}
+
+.box-3 {
+  background: #4abebe;
+  color: hsl(204, 43%, 93%);
+  padding: 40px;
+  border-radius: 0 0 5px 0;
+  flex-grow: 1;
+}
+
+.box-3 h1 {
+  font-size: 20px;
+}
+
+.box-3 ul {
+  padding: 0;
+}
+
+.box-3 ul li {
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 600px) {
+  .box-2 {
+    flex-grow: 1;
+    border-radius: 0;
+  }
+  .box-3 {
+    border-radius: 0 0 5px 5px;
+  }
+  .box-3 ul li {
+    font-size: 1.125rem;
+  }
+  .box-grande {
+    margin-top: 0;
+  }
+}
